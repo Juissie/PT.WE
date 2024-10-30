@@ -1,0 +1,12 @@
+/* src/components/WorkoutCard.css */
+
+.workout-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .workout-card-buttons .ant-btn {
+    width: 45%; /* Adjust the button width to your liking */
+  }
+  

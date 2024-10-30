@@ -1,0 +1,25 @@
+.post-card {
+    margin-bottom: 16px;
+  }
+  
+  .post-content {
+    margin-top: 16px;
+  }
+  
+  .post-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .stat-item span {
+    margin-top: 8px;
+    font-weight: bold;
+  }
+  

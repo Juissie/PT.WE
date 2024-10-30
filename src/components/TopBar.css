@@ -1,0 +1,25 @@
+/* TopBar.css */
+
+.top-bar {
+    /* Remove position: fixed */
+    height: 60px;
+    background-color: #1890ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  
+  .top-bar h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .profile-icon {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  

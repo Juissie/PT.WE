@@ -1,0 +1,114 @@
+/* BottomNavBar.css */
+
+
+.bottom-nav-bar {
+  position: fixed; /* Use fixed positioning */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Adjust as needed */
+  background-color: #fff;
+  display: flex;
+  border-top: 1px solid #ccc;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+
+.nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+
+/* Style for the active navigation item */
+.nav-item.active {
+  color: #1890ff; /* Change text color to primary color */
+}
+
+.nav-item.active svg {
+  color: #1890ff; /* Change icon color */
+}
+
+.nav-item.active span {
+  color: #1890ff; /* Change text color */
+}
+
+.nav-item.active:hover {
+  background-color: #e6f7ff; /* Light background on hover */
+}
+
+
+
+/* Popover overlay adjustments */
+.popover-overlay-horizontal .ant-popover-content {
+  padding: 0;
+  border-radius: 8px;
+}
+
+.popover-content-horizontal {
+  display: flex;
+  align-items: center;
+}
+
+.popover-item-horizontal {
+  flex: 1; /* Ensures equal size */
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border-right: 1px solid #f0f0f0;
+  font-size: 14px; /* Set a consistent font size */
+  white-space: nowrap; /* Prevent text from wrapping */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px; /* Adjust as needed to fit the text */
+}
+
+
+.popover-item-horizontal:last-child {
+  border-right: none;
+}
+
+.popover-item-horizontal:hover {
+  background-color: #f0f0f0;
+}
+
+/* Adjust popover arrow to be centered */
+.popover-overlay-horizontal .ant-popover-arrow {
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .popover-item-horizontal {
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 350px) {
+  .popover-content-horizontal {
+    flex-direction: column;
+  }
+
+  .popover-item-horizontal {
+    border-right: none;
+    border-bottom: 1px solid #f0f0f0;
+    flex: 1; /* Ensure equal height in vertical layout */
+  }
+
+  .popover-item-horizontal:last-child {
+    border-bottom: none;
+  }
+}
+

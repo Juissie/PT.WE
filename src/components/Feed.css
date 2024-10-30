@@ -1,0 +1,6 @@
+.feed-container {
+    max-height: calc(100vh - 120px); /* Adjust based on the height of top and bottom bars */
+    overflow-y: auto;
+    padding: 0 16px;
+  }
+  
